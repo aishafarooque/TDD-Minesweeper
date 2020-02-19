@@ -1,0 +1,31 @@
+x canary test
+x user exposes an unexposed cell
+x user exposes an exposed cell
+x user exposes a cell outside of the range
+x check initial cell state is unexposed
+x seal an unexposed cell
+x unseal a sealed cell
+x seal an exposed cell
+x expose a sealed cell
+x expose calls exposeNeighbors
+x expose called on an already exposed cell does not call exposeNeighbors
+x expose called on a sealed cell does not call exposeNeighbors
+x exposeNeighbors calls expose on eight neighbors
+x exposeNeighbors on top left cell calls expose only on existing cells
+x exposeNeighbors on bottom right cell calls expose only on existing cells
+x exposeNeighbors on border cell calls expose only on existing cells
+x isMineAt(3, 2) returns false
+x set mine at 3, 2 and isMineAt(3, 2) returns true
+x isMineAt(-1, 4) returns false
+x isMineAt(10, 5) returns false
+x isMineAt(5, -1) returns false
+x isMineAt(7, 10) returns false
+x exposing an adjacent cell does not call expose neighbors
+x verify adjacentMinesCountAt(4, 6) returns 0
+x set mine at 3, 4 and verify adjacentMinesCountAt(3, 4) returns 0
+x set mine at 3, 4 and verify adjacentMinesCountAt(3, 5) returns 1
+x set mine at 3, 4 and 2, 6 and verify adjacentMinesCountAt(3, 5) returns 2
+x set mine at 0, 1 and verify adjacentMinesCountAt(0, 0) returns 1
+x verify adjacentMinesCountAt(0, 9) returns 0
+x set mine at 9, 8 and verify adjacentMinesCountAt(9, 9) returns 1
+x verify adjacentMinesCountAt(9, 0) returns 0
