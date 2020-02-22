@@ -29,3 +29,11 @@ x set mine at 0, 1 and verify adjacentMinesCountAt(0, 0) returns 1
 x verify adjacentMinesCountAt(0, 9) returns 0
 x set mine at 9, 8 and verify adjacentMinesCountAt(9, 9) returns 1
 x verify adjacentMinesCountAt(9, 0) returns 0
+x getGameStatus() returns INPROGRESS
+x expose a mined cell and getGameStatus() returns LOST
+x game in progress after all mines are sealed but cells remain unexposed
+x game in progress after all mines are sealed but an empty cell is sealed
+x game in progress after all mines sealed but an adjacent cell is unexposed
+x game WON after all mines are sealed and all other cells exposed
+x call setMines(0) and verify there are a total of 10 mines, where 0 is a seed value for random number generator.
+x call setMines(0) and setMines(1) and verify there is at least one mine at a different location between the two calls
