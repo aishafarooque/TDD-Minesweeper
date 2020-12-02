@@ -14,4 +14,4 @@ To run this code:
 2. (run) ./gradlew
 
 
-![Minesweeper](media/minesweeper.gif)
+![Minesweeper](minesweeper.gif)
