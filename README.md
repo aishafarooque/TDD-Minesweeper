@@ -12,3 +12,6 @@ This is written in Java and uses JUnit for automated unit test cases.
 To run this code:
 1. CD (into the root directory)
 2. (run) ./gradlew
+
+
+![Minesweeper](media/minesweeper.gif)
